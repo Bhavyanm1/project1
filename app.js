@@ -266,6 +266,6 @@ app.delete("/campgrounds/:id/comments/:comment_id",function(req,res){
 
 
 
-app.listen(5000, function(){
+app.listen(process.env.PORT || 5000, function(){
    console.log("The YelpCamp Server Has Started!");
 });
